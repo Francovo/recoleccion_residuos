@@ -1,5 +1,9 @@
 function cerrarSesion() {
-    alert('Sesión cerrada');
+  Swal.fire({
+    title: "Drag me!",
+    icon: "Sesion finalizada",
+    draggable: true
+  });
     location.hash = 'landing';
   }
   

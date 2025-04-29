@@ -16,6 +16,11 @@ function registrarse() {
     localStorage.setItem("userData", JSON.stringify(userData));
     location.hash = "login";
   } else {
-    alert("Por favor, completa todos los campos.");
+    Swal.fire({
+      title: 'Error!',
+      text: 'Por favor completa todos los campos',
+      icon: 'error',
+      confirmButtonText: 'Aceptar'
+    });
   }
 }
